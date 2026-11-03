@@ -14,6 +14,11 @@
  */
 var SHEET_NAME = "Data";
 
+// Mở link /exec trên trình duyệt để kiểm tra: thấy dòng này là đã triển khai đúng.
+function doGet() {
+  return ContentService.createTextOutput("Đã kết nối. Link này dùng để dán vào SHEET_URL.");
+}
+
 function doPost(e) {
   var lock = LockService.getScriptLock();
   lock.waitLock(10000);
