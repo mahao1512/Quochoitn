@@ -1,6 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Khảo sát Quốc hội thanh niên</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap">
 <style>
 /* Layout: một cột mềm mại, logo xếp hàng trên đầu, mỗi khảo sát là một thẻ bo tròn có chấm màu lấy từ logo khoa học. */
@@ -19,26 +22,9 @@
   --done-line: #9bdcb2;
   --shadow: 0 2px 0 rgba(22, 52, 90, .06), 0 8px 20px rgba(22, 52, 90, .07);
   --c1: #00aeef; --c2: #28a745; --c3: #d81b5a; --c4: #c8d31a; --c5: #12467d;
+  color-scheme: light;
   --font-display: "Baloo 2", "Nunito", system-ui, sans-serif;
   --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0d1b2e; --surface: #15283f; --ink: #eaf3fc; --muted: #9db4cc; --line: #28435f;
-    --accent: #3cc4f5; --accent-ink: #052036; --chip: #4a3f12; --chip-ink: #ffe98a;
-    --done: #7adba3; --done-bg: #14382a; --done-line: #2c6b4b;
-    --shadow: 0 8px 20px rgba(0, 0, 0, .25);
-    --c5: #6ea4f5;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0d1b2e; --surface: #15283f; --ink: #eaf3fc; --muted: #9db4cc; --line: #28435f;
-  --accent: #3cc4f5; --accent-ink: #052036; --chip: #4a3f12; --chip-ink: #ffe98a;
-  --done: #7adba3; --done-bg: #14382a; --done-line: #2c6b4b;
-  --shadow: 0 8px 20px rgba(0, 0, 0, .25);
-  --c5: #6ea4f5;
-  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
@@ -87,24 +73,16 @@ ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: col
 .thanks { margin: 0; text-align: center; font-family: var(--font-display); font-weight: 600; font-size: 18px; color: var(--done); }
 .thanks[hidden] { display: none; }
 .foot { font-size: 13px; color: var(--muted); margin: 0; font-weight: 600; }
-.gate { position: fixed; inset: 0; z-index: 10; background: rgba(13, 27, 46, .55); display: grid; place-items: center; padding: 16px; }
-.gate[hidden] { display: none; }
-.gate form { width: 100%; max-width: 420px; background: var(--surface); border-radius: 24px; box-shadow: var(--shadow); padding: 22px 20px; display: flex; flex-direction: column; gap: 14px; }
-.gate h2 { margin: 0; font-size: 22px; }
-.gate p { margin: 0; color: var(--muted); font-size: 14px; }
-.gate label { display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px; }
-.gate input { font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 14px; border: 2px solid var(--line); background: var(--bg); color: var(--ink); }
-.gate input:focus { outline: none; border-color: var(--accent); }
-.gate .btn { border: 0; cursor: pointer; font-family: inherit; }
-.gate .err { color: var(--c3); font-weight: 700; font-size: 13px; min-height: 1em; }
-.who { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 14px; color: var(--muted); font-weight: 600; margin-top: 10px; }
-.who b { color: var(--ink); }
 @media (max-width: 480px) {
   .item { grid-template-columns: auto 1fr; }
   .actions { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) { .bar i, .btn { transition: none; } .btn:hover, .btn:active { transform: none; } }
 </style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
 
 <main>
   <header>
@@ -112,15 +90,15 @@ ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: col
       <span class="logo"><img src="img/doan.png" alt="Đoàn Thanh niên Cộng sản Hồ Chí Minh"></span>
       <span class="logo"><img src="img/hsv.png" alt="Hội Sinh viên Việt Nam"></span>
       <span class="logo"><img src="img/khoahoc.png" alt="Biểu tượng khoa học"></span>
+      <span class="logo"><img src="img/truong.png" alt="Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM"></span>
     </div>
     <p class="eyebrow">Đoàn trường ĐH Khoa học Tự nhiên, ĐHQG-HCM</p>
     <h1>Phiên họp giả định Quốc hội thanh niên 2026–2027</h1>
-    <p class="lead">Các bạn bấm vào từng mục bên dưới để góp ý và đánh giá mức độ hài lòng với các phòng, ban của Trường. Thực hiện đầy đủ Khảo sát và đánh giá của 6 mục bên dưới. Mục nào đã mở xong sẽ hiện "Đã điền xong".</p>
+    <p class="lead">Cả lớp bấm vào từng mục bên dưới để góp ý và đánh giá mức độ hài lòng với các phòng, ban của Trường. Mục nào đã mở xong sẽ hiện "Đã điền xong".</p>
     <div class="when">
       <span class="range">09/11 – 30/11/2026</span>
       <span class="status" id="status"></span>
     </div>
-    <div class="who" id="who" hidden>Đang điền: <b id="who-text"></b> <button type="button" class="undo" id="who-change">Đổi thông tin</button></div>
   </header>
 
   <div class="progress" aria-live="polite">
@@ -140,19 +118,8 @@ ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: col
 
   <p class="thanks" id="thanks" hidden>Xong hết rồi, cảm ơn bạn đã góp ý cho Trường!</p>
 
-  <p class="foot">Trang đánh dấu "Đã điền xong" ngay khi bạn bấm mở khảo sát. Họ tên, lớp và các mục bạn đã mở được gửi về Ban tổ chức để thống kê. Chưa điền xong thì bấm "Bỏ đánh dấu". Nếu link không mở được trong Zalo, hãy mở bằng trình duyệt.</p>
+  <p class="foot">Trang đánh dấu "Đã điền xong" ngay khi bạn bấm mở khảo sát, và chỉ lưu trên điện thoại của bạn. Chưa điền xong thì bấm "Bỏ đánh dấu". Nếu link không mở được trong Zalo, hãy mở bằng trình duyệt.</p>
 </main>
-
-<div class="gate" id="gate" hidden role="dialog" aria-modal="true" aria-labelledby="gate-title">
-  <form id="gate-form" novalidate>
-    <h2 id="gate-title">Bạn đã hoàn thành khảo sát!</h2>
-    <p>Nhập họ tên và lớp để Ban tổ chức ghi nhận.</p>
-    <label>Họ và tên<input id="f-name" name="name" autocomplete="name" required maxlength="80"></label>
-    <label>Lớp<input id="f-class" name="lop" required maxlength="40" placeholder="VD: 24CTT1"></label>
-    <div class="err" id="f-err"></div>
-    <button type="submit" class="btn">Tiếp tục</button>
-  </form>
-</div>
 
 <script>
 var BASE = "https://hienkegopy.hcmus.edu.vn/";
@@ -167,18 +134,6 @@ var GROUPS = {
     { id: "doan-hoi", name: "Văn phòng Đoàn – Hội trường", sub: "Đánh giá chất lượng dịch vụ", url: BASE + "danh-gia-chat-luong-dich-vu-van-phong-doan/", c: "var(--c5)" }
   ]
 };
-// Dán URL Web App của Google Apps Script (xem file google-apps-script.gs) vào đây.
-var SHEET_URL = "https://script.google.com/macros/s/AKfycbxB8b9EVuZ467TxWcG0RtJ4ih3W6hA0RjZLpupQYYP-Vyc5nmlFWvqadvhJhKNtr_rI/exec";
-var USER_KEY = "khao-sat-qhtn-2026-user";
-var user = null;
-function send(action) {
-  if (!SHEET_URL || !user) return;
-  var body = JSON.stringify({ name: user.name, lop: user.lop, action: action, ua: navigator.userAgent });
-  try {
-    fetch(SHEET_URL, { method: "POST", mode: "no-cors", keepalive: true, headers: { "Content-Type": "text/plain;charset=utf-8" }, body: body });
-  } catch (e) {}
-}
-
 var KEY = "khao-sat-qhtn-2026";
 var done = {};
 try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { done = {}; }
@@ -191,8 +146,6 @@ function render() {
   document.getElementById("left").textContent = n >= total ? "" : "Còn " + (total - n) + " mục";
   document.getElementById("fill").style.width = (total ? n / total * 100 : 0) + "%";
   document.getElementById("thanks").hidden = !(total && n >= total);
-  // openGate chỉ có sau khi dựng xong danh sách, để không bật form giữa chừng.
-  if (total && n >= total && !user && window.openGate) openGate();
 }
 Object.keys(GROUPS).forEach(function (listId) {
   var ul = document.getElementById(listId);
@@ -222,33 +175,6 @@ Object.keys(GROUPS).forEach(function (listId) {
 render();
 
 (function () {
-  var gate = document.getElementById("gate"), form = document.getElementById("gate-form");
-  var fName = document.getElementById("f-name"), fClass = document.getElementById("f-class"), err = document.getElementById("f-err");
-  var who = document.getElementById("who"), whoText = document.getElementById("who-text");
-  function showWho() { whoText.textContent = user.name + " – " + user.lop; who.hidden = false; }
-  // Đã gửi rồi thì lần sau mở lại không hỏi nữa.
-  try { user = JSON.parse(localStorage.getItem(USER_KEY) || "null"); } catch (e) {}
-  if (user) { fName.value = user.name; fClass.value = user.lop; showWho(); }
-  function open() { gate.hidden = false; setTimeout(function () { (fName.value ? fClass : fName).focus(); }, 0); }
-  window.openGate = open;
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var name = fName.value.replace(/\s+/g, " ").trim(), lop = fClass.value.replace(/\s+/g, " ").trim().toUpperCase();
-    if (!name || !lop) { err.textContent = "Vui lòng nhập đủ họ tên và lớp."; return; }
-    err.textContent = "";
-    user = { name: name, lop: lop };
-    try { localStorage.setItem(USER_KEY, JSON.stringify(user)); } catch (e) {}
-    showWho();
-    gate.hidden = true;
-    var items = [];
-    Object.keys(GROUPS).forEach(function (k) { GROUPS[k].forEach(function (it) { if (done[it.id]) items.push(it.name); }); });
-    send("Hoàn thành " + items.length + "/" + total + ": " + items.join("; "));
-  });
-  document.getElementById("who-change").addEventListener("click", open);
-  render();
-})();
-
-(function () {
   var s = document.getElementById("status");
   var start = new Date(2026, 10, 9), end = new Date(2026, 10, 30);
   var now = new Date(); now = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -259,4 +185,5 @@ render();
 })();
 </script>
 
-</body></html>
+</body>
+</html>
